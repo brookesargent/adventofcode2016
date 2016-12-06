@@ -11,7 +11,7 @@ while (found < 8)
   if (hash.slice(0,5) == '00000')
   {
     position = hash.charAt(5);
-    if (position < 7 && position >= 0 && password[position] == '-')
+    if (position <= 7 && position >= 0 && password[position] == '-')
     {
     password[position] = hash.charAt(6);
     found++;
